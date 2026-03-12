@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IoT LED Control</title>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+</head>
+
+<body>
+
+<h2>LED CONTROL</h2>
+
+<button onclick="ledOn()">LED ON</button>
+<button onclick="ledOff()">LED OFF</button>
+
+<script>
+
+var firebaseConfig = {
+databaseURL:"https://iot-pi-control-default-rtdb.asia-southeast1.firebasedatabase.app/"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+function ledOn(){
+firebase.database().ref("control").update({
+led:1
+});
+}
+
+function ledOff(){
+firebase.database().ref("control").update({
+led:0
+});
+}
+
+</script>
+
+</body>
+</html>
