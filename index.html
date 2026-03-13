@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>IoT Raspberry Pi Dashboard</title>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+
+<style>
+
+body{
+    font-family: Arial;
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+}
+
+.container{
+    margin-top:40px;
+}
+
+h1{
+    font-size:35px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    padding:25px;
+    margin:20px;
+    border-radius:15px;
+    display:inline-block;
+    width:250px;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    margin:10px;
+    transition:0.3s;
+}
+
+.on{
+    background:#00e676;
+}
+
+.off{
+    background:#ff5252;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+.sensor{
+    font-size:28px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Raspberry Pi IoT Dashboard</h1>
+
+<div class="container">
+
+<div class="card">
+<h2>LED 1</h2>
+<button class="on" onclick="setLED1(1)">ON</button>
+<button class="off" onclick="setLED1(0)">OFF</button>
+</div>
+
+<div class="card">
+<h2>LED 2</h2>
+<button class="on" onclick="setLED2(1)">ON</button>
+<button class="off" onclick="setLED2(0)">OFF</button>
+</div>
+
+<div class="card">
+<h2>Buzzer</h2>
+<button class="on" onclick="setBuzzer(1)">ON</button>
+<button class="off" onclick="setBuzzer(0)">OFF</button>
+</div>
+
+<div class="card">
+<h2>Nhiệt độ</h2>
+<div class="sensor" id="temp">-- °C</div>
+</div>
+
+<div class="card">
+<h2>Độ ẩm</h2>
+<div class="sensor" id="hum">-- %</div>
+</div>
+
+</div>
+
+<script>
+
+// Firebase config
+const firebaseConfig = {
+databaseURL:"https://iot-pi-control-default-rtdb.asia-southeast1.firebasedatabase.app/"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+function setLED1(val){
+db.ref("control/led1").set(val);
+}
+
+function setLED2(val){
+db.ref("control/led2").set(val);
+}
+
+function setBuzzer(val){
+db.ref("control/buzzer").set(val);
+}
+
+// đọc dữ liệu sensor realtime
+db.ref("sensor/temperature").on("value",snap=>{
+document.getElementById("temp").innerHTML=snap.val()+" °C";
+});
+
+db.ref("sensor/humidity").on("value",snap=>{
+document.getElementById("hum").innerHTML=snap.val()+" %";
+});
+
+</script>
+
+</body>
+</html>
