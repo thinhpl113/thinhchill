@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Home Web</title>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f5f5f5; }
+    .card { background: white; padding: 15px; margin-bottom: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
+    h2 { margin-top: 0; }
+    input[type=number] { width: 80px; }
+    button { margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <h1>Smart Home Web</h1>
+
+  <!-- Mode -->
+  <div class="card">
+    <h2>Mode</h2>
+    <button onclick="setMode(0)">AUTO</button>
+    <button onclick="setMode(1)">MANUAL</button>
+    <p>Current Mode: <span id="mode">0</span></p>
+  </div>
+
+  <!-- Sensors -->
+  <div class="card">
+    <h2>Sensors</h2>
+    <p>🌡 Temp: <span id="temp">0</span> °C</p>
+    <p>💧 Hum: <span id="hum">0</span> %</p>
+    <p>🌧 Rain: <span id="rain">NO</span></p>
+    <p>🔥 Gas: <span id="gas">SAFE</span></p>
+  </div>
+
+  <!-- Thresholds -->
+  <div class="card">
+    <h2>Thresholds</h2>
+    <label>Temp °C: <input id="tempLimit" type="number"></label>
+    <label>Hum %: <input id="humLimit" type="number"></label>
+    <button onclick="updateThreshold()">Update</button>
+  </div>
+
+  <!-- Controls (Manual Mode) -->
+  <div class="card" id="manualControls" style="display:none;">
+    <h2>Manual Control</h2>
+    <label>LED <input type="checkbox" id="ledSwitch" onchange="setLED(this.checked)"></label><br>
+    <label>Buzzer <input type="checkbox" id="buzzerSwitch" onchange="setBuzzer(this.checked)"></label><br>
+    <label>Servo: <span id="servoValue">0</span>°</label><br>
+    <input type="range" id="servoSlider" min="0" max="180" value="0" oninput="setServo(this.value)">
+  </div>
+
+  <!-- Chart -->
+  <div class="card">
+    <h2>Chart</h2>
+    <canvas id="chart" height="200"></canvas>
+  </div>
+
+  <!-- History -->
+  <div class="card">
+    <h2>History</h2>
+    <ul id="historyList"></ul>
+  </div>
+
+<script>
+  // ===== FIREBASE CONFIG =====
+  const firebaseConfig = {
+    apiKey: "AIzaSyCsFZ7PoDhLkNDGCR2zLNjbihHBkBoX0ZE",
+    authDomain: "nhathongminh-688ab.firebaseapp.com",
+    databaseURL: "https://nhathongminh-688ab-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "nhathongminh-688ab",
+    storageBucket: "nhathongminh-688ab.appspot.com",
+    messagingSenderId: "SENDER_ID",
+    appId: "APP_ID"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.database();
+
+  // ===== FUNCTIONS =====
+  function setMode(m) { db.ref("control/mode").set(m); }
+  function setLED(v) { db.ref("control/led").set(v ? 1 : 0); }
+  function setBuzzer(v) { db.ref("control/buzzer").set(v ? 1 : 0); }
+  function setServo(v) {
+    db.ref("control/servo").set(parseInt(v));
+    document.getElementById("servoValue").innerText = v;
+  }
+  function updateThreshold() {
+    const t = parseFloat(document.getElementById("tempLimit").value);
+    const h = parseFloat(document.getElementById("humLimit").value);
+    db.ref("setting/temp_limit").set(t);
+    db.ref("setting/hum_limit").set(h);
+    alert("Threshold updated!");
+  }
+
+  // ===== READ DATABASE =====
+  db.ref("control").on("value", snapshot => {
+    const data = snapshot.val();
+    if (!data) return;
+    document.getElementById("mode").innerText = data.mode;
+    document.getElementById("manualControls").style.display = data.mode === 1 ? "block" : "none";
+    document.getElementById("ledSwitch").checked = data.led === 1;
+    document.getElementById("buzzerSwitch").checked = data.buzzer === 1;
+    document.getElementById("servoSlider").value = data.servo;
+    document.getElementById("servoValue").innerText = data.servo;
+  });
+
+  db.ref("sensor").on("value", snapshot => {
+    const data = snapshot.val();
+    if (!data) return;
+    document.getElementById("temp").innerText = (data.temperature || 0).toFixed(1);
+    document.getElementById("hum").innerText = (data.humidity || 0).toFixed(1);
+    document.getElementById("rain").innerText = data.rain === 1 ? "RAIN" : "NO";
+    document.getElementById("gas").innerText = data.gas === 1 ? "DETECTED" : "SAFE";
+
+    addChartData(data.temperature || 0, data.humidity || 0);
+  });
+
+  db.ref("setting").on("value", snapshot => {
+    const data = snapshot.val();
+    if (!data) return;
+    document.getElementById("tempLimit").value = data.temp_limit || 35;
+    document.getElementById("humLimit").value = data.hum_limit || 80;
+  });
+
+  db.ref("history").on("value", snapshot => {
+    const data = snapshot.val();
+    const list = document.getElementById("historyList");
+    list.innerHTML = "";
+    if (!data) return;
+    Object.values(data).reverse().forEach(item => {
+      const li = document.createElement("li");
+      li.innerText = `Temp: ${item.temp} °C, Hum: ${item.hum} %, Time: ${item.time}`;
+      list.appendChild(li);
+    });
+  });
+
+  // ===== CHART =====
+  const ctx = document.getElementById("chart").getContext("2d");
+  const chart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: [],
+      datasets: [
+        { label: "Temp °C", data: [], borderColor: "red", fill: false },
+        { label: "Hum %", data: [], borderColor: "blue", fill: false }
+      ]
+    },
+    options: { animation: false, scales: { x: { display: false }, y: { beginAtZero: true } } }
+  });
+
+  function addChartData(temp, hum) {
+    const data = chart.data;
+    const tLen = data.labels.length;
+    data.labels.push(tLen + 1);
+    data.datasets[0].data.push(temp);
+    data.datasets[1].data.push(hum);
+    if (data.labels.length > 20) {
+      data.labels.shift();
+      data.datasets[0].data.shift();
+      data.datasets[1].data.shift();
+    }
+    chart.update();
+  }
+</script>
+
+</body>
+</html>
