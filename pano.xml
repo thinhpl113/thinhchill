@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour apprev="20981" hassounds="1" start="node1" appversion="7.1.7">
+  <panorama id="node1">
+    <input overlap="1" width="1024" levelbiashidpi="1.000" height="1024" levelingroll="0" levelingpitch="0" levelbias="0.400" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510">
+      <level width="1024" preload="0" predecode="0" height="1024"/>
+      <level width="512" preload="0" predecode="0" height="512"/>
+      <level width="256" preload="1" predecode="1" height="256"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start tilt="-3.53" projection="4" fov="149.56" pan="-7.05"/>
+      <flyin tilt="-90" projection="9" fov="170" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" fov="140" scaletofit="1" fovstereographic="330" pan="360" fovfisheye="360"/>
+    </view>
+    <userdata latitude="" source="" copyright="" comment="" title="" description="" tags="image" heading="0" customnodeid="" author="" nodeid="node1" datetime="" info="" longitude=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label border="1" background="1" bordercolor="0x000000" textcolor="0x000000" textalpha="1" width="180" borderalpha="1" wordwrap="1" height="20" backgroundcolor="0xffffff" borderradius="1" enabled="1" backgroundalpha="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot tilt="-23.1" title="Dãy C" description="" target="" skinid="Check_Point_robot" id="Point01" pan="-35.63" url="{node2}"/>
+      <hotspot tilt="-4.21" title="Dãy B" description="" target="" skinid="Check_Point_robot" id="Point02" pan="-336.9" url="{node6}"/>
+      <hotspot tilt="-18.52" title="Sân Chính" description="" target="" skinid="Check_Point_robot" id="Point03" pan="-358.07" url="{node8}"/>
+    </hotspots>
+    <media>
+      <sound tilt="-32.340" level="1.000" field="90.000" id="Element01" pan="-306.470" mode="2" pansize="10.000" loop="1" tiltsize="10.000" ambientlevel="0.000" startmutedmobile="0" nodechangekeep="0">
+        <source mono="0" url="media/info-1.mp3"/>
+      </sound>
+    </media>
+    <transition zoomoutpause="1" zoomafterinfov="140" zoomout="0" blendcolor="0x000000" zoomfov="40" softedge="0" type="crossdissolve" zoomin="0" delay="none" zoomafteroutfov="40" blendtime="1" enabled="1" zoomspeed="2"/>
+    <autorotate startloaded="0" speed="0.100" nodedelay="0.00" horizonfromdefview="0" nodefilter="" noderandom="1" delay="5.00" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <animation animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedmouse="0" invertcontrol="1" contextfullscreen="1" contextprojections="0" speedwheel="1" lockedwheel="0" sensitivity="8" rubberband="0" zoomcentercursor="1" invertwheel="0" dblclickfullscreen="0" hideabout="0" simulatemass="1" lockedkeyboardzoom="0" contextvr="1" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node8">
+    <input overlap="1" width="1024" levelbiashidpi="1.000" height="1024" levelingroll="0" levelingpitch="0" levelbias="0.400" leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510">
+      <level width="1024" preload="0" predecode="0" height="1024"/>
+      <level width="512" preload="0" predecode="0" height="512"/>
+      <level width="256" preload="1" predecode="1" height="256"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start tilt="-44.67" projection="4" fov="140.42" pan="-173.3"/>
+      <flyin tilt="-90" projection="9" fov="170" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" fov="140" scaletofit="1" fovstereographic="330" pan="360" fovfisheye="360"/>
+    </view>
+    <userdata latitude="10.046963" source="" copyright="" comment="" title="Anh tren cao" description="" tags="image" heading="0" customnodeid="" altitude="75.50" author="" nodeid="node8" datetime="9/11/2025 6:35 AM" info="" longitude="105.767805"/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label border="1" background="1" bordercolor="0x000000" textcolor="0x000000" textalpha="1" width="180" borderalpha="1" wordwrap="1" height="20" backgroundcolor="0xffffff" borderradius="1" enabled="1" backgroundalpha="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot tilt="-51.62" title="Dãy B" description="" target="" skinid="Check_Point_robot" id="Point01" pan="-339.37" url="{node6}"/>
+      <hotspot tilt="-33.99" title="Dãy C" description="" target="" skinid="Check_Point_robot" id="Point02" pan="-224.62" url="{node2}"/>
+      <hotspot tilt="-40.11" title="Cổng Chính" description="" target="" skinid="Check_Point_robot" id="Point03" pan="-288.76" url="{node1}"/>
+      <hotspot tilt="-29.12" title="Thư Viện" description="" target="" skinid="Check_Point_robot" id="Point04" pan="-148.19" url="{node4}"/>
+      <hotspot tilt="-29.06" title="Phòng Máy" description="" target="" skinid="Check_Point_robot" id="Point05" pan="-120.16" url="{node5}"/>
+    </hotspots>
+    <media>
+      <sound tilt="-25.500" level="1.000" field="90.000" id="Element01" pan="-8.680" mode="2" pansize="10.000" loop="1" tiltsize="10.000" ambientlevel="0.000" startmutedmobile="0" nodechangekeep="0">
+        <source mono="0" url="media/nen.mp3"/>
+      </sound>
+    </media>
+    <transition zoomoutpause="1" zoomafterinfov="140" zoomout="0" blendcolor="0x000000" zoomfov="40" softedge="0" type="crossdissolve" zoomin="0" delay="none" zoomafteroutfov="40" blendtime="1" enabled="1" zoomspeed="2"/>
+    <autorotate startloaded="0" speed="0.100" nodedelay="0.00" horizonfromdefview="0" nodefilter="" noderandom="1" delay="5.00" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <animation animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedmouse="0" invertcontrol="1" contextfullscreen="1" contextprojections="0" speedwheel="1" lockedwheel="0" sensitivity="8" rubberband="0" zoomcentercursor="1" invertwheel="0" dblclickfullscreen="0" hideabout="0" simulatemass="1" lockedkeyboardzoom="0" contextvr="1" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node6">
+    <input overlap="1" width="1024" levelbiashidpi="1.000" height="1024" levelingroll="0" levelingpitch="0" levelbias="0.400" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510">
+      <level width="1024" preload="0" predecode="0" height="1024"/>
+      <level width="512" preload="0" predecode="0" height="512"/>
+      <level width="256" preload="1" predecode="1" height="256"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start tilt="-20.63" projection="4" fov="149.56" pan="95.3"/>
+      <flyin tilt="-90" projection="9" fov="170" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" fov="140" scaletofit="1" fovstereographic="330" pan="360" fovfisheye="360"/>
+    </view>
+    <userdata latitude="" source="" copyright="" comment="" title="" description="" tags="image" heading="0" customnodeid="" author="" nodeid="node6" datetime="" info="" longitude=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label border="1" background="1" bordercolor="0x000000" textcolor="0x000000" textalpha="1" width="180" borderalpha="1" wordwrap="1" height="20" backgroundcolor="0xffffff" borderradius="1" enabled="1" backgroundalpha="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot tilt="-12.03" title="Dãy C" description="" target="" skinid="Check_Point_robot" id="Point01" pan="-113.36" url="{node2}"/>
+      <hotspot tilt="-35.1" title="Sân Chính" description="" target="" skinid="Check_Point_robot" id="Point02" pan="-93.38" url="{node8}"/>
+      <hotspot tilt="-38.21" title="Phòng&#xa;Tổ Chức - Hành Chính" description="" target="" skinid="ht_url_tulieuanhbac" id="Point03" pan="-207.46" url=""/>
+      <hotspot tilt="-33.07" title="Trung Tâm&#xa;Ngoại Ngữ - Tin Học" description="" target="" skinid="ht_url_tulieuanhbac" id="Point04" pan="-276.66" url=""/>
+      <hotspot tilt="-26.9" title="Trung&#xa;Tâm Đào Tạo - Bồi Dưỡng" description="" target="" skinid="ht_url_tulieuanhbac" id="Point05" pan="-317.74" url=""/>
+      <hotspot tilt="-7.16" title="Hội Trường&#xa;A" description="" target="" skinid="ht_url_tulieuanhbac" id="Point06" pan="-40.1" url=""/>
+      <hotspot tilt="-8.39" title="Hội Trường&#xa;B" description="" target="" skinid="ht_url_tulieuanhbac" id="Point07" pan="-222.52" url=""/>
+      <hotspot tilt="11.88" title="Hội Trường&#xa;C" description="" target="" skinid="ht_url_tulieuanhbac" id="Point08" pan="-97.93" url=""/>
+      <hotspot tilt="-18.61" title="Trung tâm &#xa;Thí Nghiệm - Kỹ Thuật Năng Lượng&#xa;Chuyển giao công nghệ" description="" target="" skinid="ht_url_tulieuanhbac" id="Point09" pan="-340.79" url=""/>
+      <hotspot tilt="-29.21" title="Phòng&#xa;Kế Hoạch - Tài Chính " description="" target="" skinid="ht_url_tulieuanhbac" id="Point10" pan="-236.2" url=""/>
+      <hotspot tilt="-16.93" title="Phòng&#xa;Quản lí khoa học công nghệ&#xa;Đổi mới sáng tạo&#xa;Hợp tác quốc tế" description="" target="_blank" skinid="ht_url_tulieuanhbac" id="Point11" pan="-246.06" url=""/>
+      <hotspot tilt="-20.89" title="Phòng&#xa;Thanh Tra -  Pháp Chế&#xa;Phát Triển Chiến Lược" description="" target="_blank" skinid="ht_url_tulieuanhbac" id="Point12" pan="-277.4" url=""/>
+      <hotspot tilt="-30.91" title="Trung Tâm&#xa;Nhật Ngữ" description="" target="_blank" skinid="ht_url_tulieuanhbac" id="Point13" pan="-297.99" url=""/>
+      <hotspot tilt="-26.48" title="Phòng&#xa;Khảo Thí&#xa;Đảm Bảo Chất Lượng" description="" target="_blank" skinid="ht_url_tulieuanhbac" id="Point14" pan="-52.13" url=""/>
+      <hotspot tilt="-12.84" title="Cổng Sau" description="" target="" skinid="Check_Point_robot" id="Point15" pan="-359.88" url="{node7}"/>
+      <hotspot tilt="-27.81" title="Cổng Chính" description="" target="" skinid="Check_Point_robot" id="Point16" pan="-138.96" url="{node1}"/>
+    </hotspots>
+    <media>
+      <sound tilt="-35.950" level="1.000" field="90.000" id="Element01" pan="-311.970" mode="2" pansize="10.000" loop="1" tiltsize="10.000" ambientlevel="0.000" startmutedmobile="0" nodechangekeep="0">
+        <source mono="0" url="media/nen.mp3"/>
+      </sound>
+      <lensflare tilt="7.780" type="1" color="0xffffff" blinding="50.000" alpha="80.000" id="Lensflare01" pan="-194.030"/>
+    </media>
+    <transition zoomoutpause="1" zoomafterinfov="140" zoomout="0" blendcolor="0x000000" zoomfov="40" softedge="0" type="crossdissolve" zoomin="0" delay="none" zoomafteroutfov="40" blendtime="1" enabled="1" zoomspeed="2"/>
+    <autorotate startloaded="0" speed="0.100" nodedelay="0.00" horizonfromdefview="0" nodefilter="" noderandom="1" delay="5.00" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <animation animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedmouse="0" invertcontrol="1" contextfullscreen="1" contextprojections="0" speedwheel="1" lockedwheel="0" sensitivity="8" rubberband="0" zoomcentercursor="1" invertwheel="0" dblclickfullscreen="0" hideabout="0" simulatemass="1" lockedkeyboardzoom="0" contextvr="1" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node2">
+    <input overlap="1" width="1024" levelbiashidpi="1.000" height="1024" levelingroll="0" levelingpitch="0" levelbias="0.400" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510">
+      <level width="1024" preload="0" predecode="0" height="1024"/>
+      <level width="512" preload="0" predecode="0" height="512"/>
+      <level width="256" preload="1" predecode="1" height="256"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start tilt="-32.44" projection="4" fov="149.56" pan="-52.01"/>
+      <flyin tilt="-90" projection="9" fov="170" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" fov="140" scaletofit="1" fovstereographic="330" pan="360" fovfisheye="360"/>
+    </view>
+    <userdata latitude="" source="" copyright="" comment="" title="" description="" tags="image" heading="0" customnodeid="" author="" nodeid="node2" datetime="" info="" longitude=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label border="1" background="1" bordercolor="0x000000" textcolor="0x000000" textalpha="1" width="180" borderalpha="1" wordwrap="1" height="20" backgroundcolor="0xffffff" borderradius="1" enabled="1" backgroundalpha="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot tilt="-54.65" title="Sân Chính" description="" target="" skinid="Check_Point_robot" id="Point01" pan="-166.76" url="{node8}"/>
+      <hotspot tilt="-30.9" title="Dãy B" description="" target="" skinid="Check_Point_robot" id="Point02" pan="-172.79" url="{node6}"/>
+      <hotspot tilt="-13.66" title="Phòng Máy" description="" target="" skinid="Check_Point_robot" id="Point03" pan="-266.07" url="{node5}"/>
+      <hotspot tilt="-16.86" title="Thư Viện" description="" target="" skinid="Check_Point_robot" id="Point04" pan="-293.73" url="{node4}"/>
+      <hotspot tilt="-47.85" title="Hội Trường&#xa;A" description="" target="_blank" skinid="ht_url_tulieuanhbac" id="Point06" pan="-204.25" url=""/>
+      <hotspot tilt="-6.88" title="Hội Trường&#xa;C" description="" target="" skinid="ht_url_tulieuanhbac" id="Point07" pan="-10.72" url=""/>
+      <hotspot tilt="-22.82" title="Hội Trường&#xa;B" description="" target="" skinid="ht_url_tulieuanhbac" id="Point08" pan="-170.35" url=""/>
+      <hotspot tilt="-57.2" title="Khoa&#xa;Kỹ Thuật Cơ Khí" description="" target="" skinid="ht_url_tulieuanhbac" id="Point09" pan="-77.82" url=""/>
+      <hotspot tilt="-46.99" title="Khoa Điện -&#xa;Điện tử" description="" target="" skinid="ht_url_tulieuanhbac" id="Point10" pan="-49.67" url=""/>
+      <hotspot tilt="-65.58" title="Phòng&#xa;CTCT&amp;QLSV" description="" target="" skinid="ht_url_tulieuanhbac" id="Point11" pan="-282.88" url=""/>
+      <hotspot tilt="-39.21" title="Khoa&#xa;Công Nghệ Thông Tin" description="" target="" skinid="ht_url_tulieuanhbac" id="Point12" pan="-16.87" url=""/>
+      <hotspot tilt="-37.06" title="Khoa&#xa;Công Nghệ Sinh Học&#xa;Công Nghệ Hóa Học&#xa;Công Nghệ Thực Phẩm" description="" target="" skinid="ht_url_tulieuanhbac" id="Point13" pan="-348.87" url=""/>
+      <hotspot tilt="-32.91" title="Khoa&#xa;Kỹ Thuật Xây Dựng" description="" target="" skinid="ht_url_tulieuanhbac" id="Point14" pan="-324.99" url=""/>
+      <hotspot tilt="-60.72" title="Khoa&#xa;Kinh tế&#xa;Quản lý công nghiệp" description="" target="" skinid="ht_url_tulieuanhbac" id="Point15" pan="-262.24" url=""/>
+      <hotspot tilt="-57.57" title="Khoa&#xa;Khoa học Xã Hội" description="" target="" skinid="ht_url_tulieuanhbac" id="Point16" pan="-287.79" url=""/>
+      <hotspot tilt="-57.22" title="Phòng Quản lí đào tạo" description="" target="" skinid="ht_url_tulieuanhbac" id="Point17" pan="-120.92" url=""/>
+      <hotspot tilt="-44.38" title="Phòng&#xa;Quản trị - Thiết bị" description="" target="_blank" skinid="ht_url_tulieuanhbac" id="Point18" pan="-259.85" url=""/>
+      <hotspot tilt="-38.99" title="Cổng Chính" description="" target="" skinid="Check_Point_robot" id="Point19" pan="-139.96" url="{node1}"/>
+      <hotspot tilt="-54" title="C101" description="" target="" skinid="ht_url_tulieuanhbac" id="Point20" pan="-115" url=""/>
+      <hotspot tilt="-54.1" title="C102" description="" target="" skinid="ht_url_tulieuanhbac" id="Point21" pan="-83" url=""/>
+      <hotspot tilt="-46" title="C103" description="" target="" skinid="ht_url_tulieuanhbac" id="Point22" pan="-56" url=""/>
+      <hotspot tilt="-36" title="104-Phòng&#xa;kỹ thuật" description="" target="" skinid="ht_url_tulieuanhbac" id="Point23" pan="-40" url=""/>
+      <hotspot tilt="-34" title="C105" description="" target="" skinid="ht_url_tulieuanhbac" id="Point24" pan="-10.72" url=""/>
+      <hotspot tilt="-33" title="C106" description="" target="" skinid="ht_url_tulieuanhbac" id="Point25" pan="8" url=""/>
+      <hotspot tilt="-49" title="C201" description="" target="" skinid="ht_url_tulieuanhbac" id="Point26" pan="-115" url=""/>
+      <hotspot tilt="-49" title="C202" description="" target="" skinid="ht_url_tulieuanhbac" id="Point27" pan="-83" url=""/>
+      <hotspot tilt="-41" title="C203" description="" target="" skinid="ht_url_tulieuanhbac" id="Point28" pan="-56" url=""/>
+      <hotspot tilt="-32" title="204-Kho P.CT&#xa;&amp; QLSV" description="" target="" skinid="ht_url_tulieuanhbac" id="Point29" pan="-40" url=""/>
+      <hotspot tilt="-29" title="C205" description="" target="" skinid="ht_url_tulieuanhbac" id="Point30" pan="-10.72" url=""/>
+      <hotspot tilt="-29" title="C206" description="" target="" skinid="ht_url_tulieuanhbac" id="Point31" pan="8" url=""/>
+      <hotspot tilt="-42" title="C301" description="" target="" skinid="ht_url_tulieuanhbac" id="Point32" pan="-115" url=""/>
+      <hotspot tilt="-42" title="C302" description="" target="" skinid="ht_url_tulieuanhbac" id="Point33" pan="-83" url=""/>
+      <hotspot tilt="-34" title="C303" description="" target="" skinid="ht_url_tulieuanhbac" id="Point34" pan="-56" url=""/>
+      <hotspot tilt="-26" title="304-Kho P.KT&#xa;&amp; KĐCL" description="" target="" skinid="ht_url_tulieuanhbac" id="Point35" pan="-40" url=""/>
+      <hotspot tilt="-24" title="C305" description="" target="" skinid="ht_url_tulieuanhbac" id="Point36" pan="-10.72" url=""/>
+      <hotspot tilt="-24" title="C306" description="" target="" skinid="ht_url_tulieuanhbac" id="Point37" pan="8" url=""/>
+      <hotspot tilt="-35" title="C401" description="" target="" skinid="ht_url_tulieuanhbac" id="Point38" pan="-115" url=""/>
+      <hotspot tilt="-35" title="C402" description="" target="" skinid="ht_url_tulieuanhbac" id="Point39" pan="-83" url=""/>
+      <hotspot tilt="-27" title="C403" description="" target="" skinid="ht_url_tulieuanhbac" id="Point40" pan="-56" url=""/>
+      <hotspot tilt="-20" title="404-Phòng&#xa;giảng viên" description="" target="" skinid="ht_url_tulieuanhbac" id="Point41" pan="-40" url=""/>
+      <hotspot tilt="-19" title="C405" description="" target="" skinid="ht_url_tulieuanhbac" id="Point42" pan="-10.72" url=""/>
+      <hotspot tilt="-18" title="C406" description="" target="" skinid="ht_url_tulieuanhbac" id="Point43" pan="8" url=""/>
+      <hotspot tilt="-25" title="C501" description="" target="" skinid="ht_url_tulieuanhbac" id="Point44" pan="-115" url=""/>
+      <hotspot tilt="-25" title="C502" description="" target="" skinid="ht_url_tulieuanhbac" id="Point45" pan="-83" url=""/>
+      <hotspot tilt="-19" title="C503" description="" target="" skinid="ht_url_tulieuanhbac" id="Point46" pan="-56" url=""/>
+      <hotspot tilt="-14" title="504-Phòng&#xa;sao đề thi" description="" target="" skinid="ht_url_tulieuanhbac" id="Point47" pan="-40" url=""/>
+      <hotspot tilt="-14" title="C505" description="" target="" skinid="ht_url_tulieuanhbac" id="Point48" pan="-10.72" url=""/>
+      <hotspot tilt="-13" title="C506" description="" target="" skinid="ht_url_tulieuanhbac" id="Point49" pan="8" url=""/>
+      <hotspot tilt="-12" title="C601" description="" target="" skinid="ht_url_tulieuanhbac" id="Point50" pan="-115" url=""/>
+      <hotspot tilt="-12" title="C602" description="" target="" skinid="ht_url_tulieuanhbac" id="Point51" pan="-83" url=""/>
+      <hotspot tilt="-9" title="C603" description="" target="" skinid="ht_url_tulieuanhbac" id="Point52" pan="-56" url=""/>
+      <hotspot tilt="-7" title="604-PTN&#xa;Năng lượng mặt trời" description="" target="" skinid="ht_url_tulieuanhbac" id="Point53" pan="-40" url=""/>
+      <hotspot tilt="-6" title="C606" description="" target="" skinid="ht_url_tulieuanhbac" id="Point54" pan="8" url=""/>
+      <hotspot tilt="-28" title="C107" description="" target="" skinid="ht_url_tulieuanhbac" id="Point55" pan="30" url=""/>
+      <hotspot tilt="-27.5" title="C108" description="" target="" skinid="ht_url_tulieuanhbac" id="Point56" pan="42" url=""/>
+      <hotspot tilt="-31" title="C109" description="" target="" skinid="ht_url_tulieuanhbac" id="Point57" pan="54" url=""/>
+      <hotspot tilt="-24" title="C207" description="" target="" skinid="ht_url_tulieuanhbac" id="Point58" pan="30" url=""/>
+      <hotspot tilt="-23.5" title="C208" description="" target="" skinid="ht_url_tulieuanhbac" id="Point59" pan="42" url=""/>
+      <hotspot tilt="-27" title="C209" description="" target="" skinid="ht_url_tulieuanhbac" id="Point60" pan="54" url=""/>
+    </hotspots>
+    <media>
+      <sound tilt="-39.190" level="1.000" field="90.000" id="Element01" pan="-304.170" mode="2" pansize="10.000" loop="1" tiltsize="10.000" ambientlevel="0.000" startmutedmobile="0" nodechangekeep="0">
+        <source mono="0" url="media/nen.mp3"/>
+      </sound>
+      <lensflare tilt="19.810" type="1" color="0xffffff" blinding="50.000" alpha="80.000" id="Lensflare01" pan="-132.310"/>
+    </media>
+    <transition zoomoutpause="1" zoomafterinfov="140" zoomout="0" blendcolor="0x000000" zoomfov="40" softedge="0" type="crossdissolve" zoomin="0" delay="none" zoomafteroutfov="40" blendtime="1" enabled="1" zoomspeed="2"/>
+    <autorotate startloaded="0" speed="0.100" nodedelay="0.00" horizonfromdefview="0" nodefilter="" noderandom="1" delay="5.00" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <animation animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedmouse="0" invertcontrol="1" contextfullscreen="1" contextprojections="0" speedwheel="1" lockedwheel="0" sensitivity="8" rubberband="0" zoomcentercursor="1" invertwheel="0" dblclickfullscreen="0" hideabout="0" simulatemass="1" lockedkeyboardzoom="0" contextvr="1" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node5">
+    <input overlap="1" width="1024" levelbiashidpi="1.000" height="1024" levelingroll="0" levelingpitch="0" levelbias="0.400" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510">
+      <level width="1024" preload="0" predecode="0" height="1024"/>
+      <level width="512" preload="0" predecode="0" height="512"/>
+      <level width="256" preload="1" predecode="1" height="256"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start tilt="-20.88" projection="4" fov="161.78" pan="4.52"/>
+      <flyin tilt="-90" projection="9" fov="170" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" fov="140" scaletofit="1" fovstereographic="330" pan="360" fovfisheye="360"/>
+    </view>
+    <userdata latitude="" source="" copyright="" comment="" title="" description="" tags="image" heading="0" customnodeid="" author="" nodeid="node5" datetime="" info="" longitude=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label border="1" background="1" bordercolor="0x000000" textcolor="0x000000" textalpha="1" width="180" borderalpha="1" wordwrap="1" height="20" backgroundcolor="0xffffff" borderradius="1" enabled="1" backgroundalpha="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot tilt="-24.03" title="Thư Viện" description="" target="" skinid="Check_Point_robot" id="Point01" pan="-79.33" url="{node4}"/>
+      <hotspot tilt="-23.26" title="Cổng Phụ" description="" target="" skinid="Check_Point_robot" id="Point02" pan="-254.15" url="{node3}"/>
+      <hotspot tilt="-0.84" title="Dãy C" description="" target="" skinid="Check_Point_robot" id="Point03" pan="-122.77" url="{node2}"/>
+      <hotspot tilt="-2.53" title="Dãy B" description="" target="" skinid="Check_Point_robot" id="Point04" pan="-205.27" url="{node6}"/>
+      <hotspot tilt="-41.96" title="Căn Tin" description="" target="" skinid="ht_url_tulieuanhbac" id="Point05" pan="-188.62" url=""/>
+      <hotspot tilt="-28.46" title="Phòng Máy 1" description="" target="" skinid="ht_url_tulieuanhbac" id="Point06" pan="-44.88" url=""/>
+      <hotspot tilt="-38.71" title="Phòng Máy 2" description="" target="" skinid="ht_url_tulieuanhbac" id="Point07" pan="0.32" url=""/>
+      <hotspot tilt="-25.69" title="Phòng Máy 3" description="" target="" skinid="ht_url_tulieuanhbac" id="Point08" pan="-303.09" url=""/>
+      <hotspot tilt="-17.01" title="Phòng Máy 4" description="" target="" skinid="ht_url_tulieuanhbac" id="Point09" pan="-287.25" url=""/>
+      <hotspot tilt="-16.36" title="Phòng Máy 5" description="" target="" skinid="ht_url_tulieuanhbac" id="Point10" pan="-44.49" url=""/>
+      <hotspot tilt="-23.64" title="Phòng Máy 6" description="" target="" skinid="ht_url_tulieuanhbac" id="Point11" pan="-0.06" url=""/>
+      <hotspot tilt="-14.54" title="Phòng Máy 7" description="" target="" skinid="ht_url_tulieuanhbac" id="Point12" pan="-303.38" url=""/>
+      <hotspot tilt="-9.13" title="Phòng Máy 8" description="" target="" skinid="ht_url_tulieuanhbac" id="Point13" pan="-288.56" url=""/>
+      <hotspot tilt="-15.83" title="Phòng Máy 9" description="" target="" skinid="ht_url_tulieuanhbac" id="Point14" pan="-95.35" url=""/>
+      <hotspot tilt="-9.43" title="Phòng Máy 10" description="" target="" skinid="ht_url_tulieuanhbac" id="Point15" pan="-79.61" url=""/>
+      <hotspot tilt="-2.98" title="Cổng Chính" description="" target="" skinid="Check_Point_robot" id="Point16" pan="-181.45" url="{node1}"/>
+    </hotspots>
+    <media>
+      <sound tilt="-37.630" level="1.000" field="90.000" id="Element01" pan="-308.390" mode="2" pansize="10.000" loop="1" tiltsize="10.000" ambientlevel="0.000" startmutedmobile="0" nodechangekeep="0">
+        <source mono="0" url="media/nen.mp3"/>
+      </sound>
+    </media>
+    <transition zoomoutpause="1" zoomafterinfov="140" zoomout="0" blendcolor="0x000000" zoomfov="40" softedge="0" type="crossdissolve" zoomin="0" delay="none" zoomafteroutfov="40" blendtime="1" enabled="1" zoomspeed="2"/>
+    <autorotate startloaded="0" speed="0.100" nodedelay="0.00" horizonfromdefview="0" nodefilter="" noderandom="1" delay="5.00" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <animation animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedmouse="0" invertcontrol="1" contextfullscreen="1" contextprojections="0" speedwheel="1" lockedwheel="0" sensitivity="8" rubberband="0" zoomcentercursor="1" invertwheel="0" dblclickfullscreen="0" hideabout="0" simulatemass="1" lockedkeyboardzoom="0" contextvr="1" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node3">
+    <input overlap="1" width="1024" levelbiashidpi="1.000" height="1024" levelingroll="0" levelingpitch="0" levelbias="0.400" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510">
+      <level width="1024" preload="0" predecode="0" height="1024"/>
+      <level width="512" preload="0" predecode="0" height="512"/>
+      <level width="256" preload="1" predecode="1" height="256"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start tilt="-17.53" projection="4" fov="138.26" pan="-18.73"/>
+      <flyin tilt="-90" projection="9" fov="170" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" fov="140" scaletofit="1" fovstereographic="330" pan="360" fovfisheye="360"/>
+    </view>
+    <userdata latitude="" source="" copyright="" comment="" title="" description="" tags="image" heading="0" customnodeid="" author="" nodeid="node3" datetime="" info="" longitude=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label border="1" background="1" bordercolor="0x000000" textcolor="0x000000" textalpha="1" width="180" borderalpha="1" wordwrap="1" height="20" backgroundcolor="0xffffff" borderradius="1" enabled="1" backgroundalpha="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot tilt="-25.36" title="Cổng Phụ" description="" target="" skinid="ht_url_tulieuanhbac" id="Point01" pan="-340.21" url=""/>
+      <hotspot tilt="-17.17" title="Sân Bóng Bàn" description="" target="" skinid="ht_url_tulieuanhbac" id="Point02" pan="2.49" url=""/>
+      <hotspot tilt="-41.53" title="Phòng Máy" description="" target="" skinid="Check_Point_robot" id="Point03" pan="-133.04" url="{node5}"/>
+      <hotspot tilt="-11.84" title="Thư Viện" description="" target="" skinid="Check_Point_robot" id="Point04" pan="-174.69" url="{node4}"/>
+      <hotspot tilt="-23.35" title="Căn Tin" description="" target="" skinid="ht_url_tulieuanhbac" id="Point05" pan="-241.93" url=""/>
+      <hotspot tilt="-21.05" title="Phòng Máy 3" description="" target="" skinid="ht_url_tulieuanhbac" id="Point06" pan="-74.84" url=""/>
+      <hotspot tilt="-14.69" title="Phòng Máy 4" description="" target="" skinid="ht_url_tulieuanhbac" id="Point07" pan="-38.12" url=""/>
+      <hotspot tilt="-3.66" title="Phòng Máy 7" description="" target="" skinid="ht_url_tulieuanhbac" id="Point08" pan="-74.33" url=""/>
+      <hotspot tilt="-3.04" title="Phòng Máy 8" description="" target="_blank" skinid="ht_url_tulieuanhbac" id="Point09" pan="-38.04" url=""/>
+      <hotspot tilt="-23.88" title="Dãy B" description="" target="" skinid="Check_Point_robot" id="Point10" pan="-308.29" url="{node7}"/>
+      <hotspot tilt="2.15" title="Cổng Chính" description="" target="" skinid="Check_Point_robot" id="Point11" pan="-270.08" url="{node1}"/>
+    </hotspots>
+    <media>
+      <sound tilt="-42.180" level="1.000" field="90.000" id="Element01" pan="-296.020" mode="2" pansize="10.000" loop="1" tiltsize="10.000" ambientlevel="0.000" startmutedmobile="0" nodechangekeep="0">
+        <source mono="0" url="media/nen.mp3"/>
+      </sound>
+    </media>
+    <transition zoomoutpause="1" zoomafterinfov="140" zoomout="0" blendcolor="0x000000" zoomfov="40" softedge="0" type="crossdissolve" zoomin="0" delay="none" zoomafteroutfov="40" blendtime="1" enabled="1" zoomspeed="2"/>
+    <autorotate startloaded="0" speed="0.100" nodedelay="0.00" horizonfromdefview="0" nodefilter="" noderandom="1" delay="5.00" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <animation animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedmouse="0" invertcontrol="1" contextfullscreen="1" contextprojections="0" speedwheel="1" lockedwheel="0" sensitivity="8" rubberband="0" zoomcentercursor="1" invertwheel="0" dblclickfullscreen="0" hideabout="0" simulatemass="1" lockedkeyboardzoom="0" contextvr="1" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node4">
+    <input overlap="1" width="1024" levelbiashidpi="1.000" height="1024" levelingroll="0" levelingpitch="0" levelbias="0.400" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510">
+      <level width="1024" preload="0" predecode="0" height="1024"/>
+      <level width="512" preload="0" predecode="0" height="512"/>
+      <level width="256" preload="1" predecode="1" height="256"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start tilt="-19.23" projection="4" fov="118.15" pan="24.29"/>
+      <flyin tilt="-90" projection="9" fov="170" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" fov="140" scaletofit="1" fovstereographic="330" pan="360" fovfisheye="360"/>
+    </view>
+    <userdata latitude="" source="" copyright="" comment="" title="" description="" tags="image" heading="0" customnodeid="" author="" nodeid="node4" datetime="" info="" longitude=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label border="1" background="1" bordercolor="0x000000" textcolor="0x000000" textalpha="1" width="180" borderalpha="1" wordwrap="1" height="20" backgroundcolor="0xffffff" borderradius="1" enabled="1" backgroundalpha="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot tilt="-20.44" title="Phòng Máy" description="" target="" skinid="Check_Point_robot" id="Point01" pan="-199.41" url="{node5}"/>
+      <hotspot tilt="-34.03" title="Thư Viện" description="" target="" skinid="ht_url_tulieuanhbac" id="Point02" pan="-342.06" url=""/>
+      <hotspot tilt="-10.2" title="Cổng Phụ" description="" target="" skinid="Check_Point_robot" id="Point03" pan="-171.64" url="{node3}"/>
+      <hotspot tilt="-21.69" title="Căn Tin" description="" target="" skinid="ht_url_tulieuanhbac" id="Point04" pan="-139.58" url=""/>
+      <hotspot tilt="4.24" title="Dãy C" description="" target="" skinid="Check_Point_robot" id="Point05" pan="-68.51" url="{node2}"/>
+      <hotspot tilt="-18.03" title="Phòng Máy 9" description="" target="" skinid="ht_url_tulieuanhbac" id="Point06" pan="-2.08" url=""/>
+      <hotspot tilt="-3.34" title="Phòng Máy 10" description="" target="" skinid="ht_url_tulieuanhbac" id="Point07" pan="-345.17" url=""/>
+      <hotspot tilt="-21.51" title="Phòng Máy 1" description="" target="" skinid="ht_url_tulieuanhbac" id="Point08" pan="-257.66" url=""/>
+      <hotspot tilt="-2.31" title="Phòng Máy 5" description="" target="" skinid="ht_url_tulieuanhbac" id="Point09" pan="-254.36" url=""/>
+      <hotspot tilt="-2.04" title="Phòng Máy 6" description="" target="" skinid="ht_url_tulieuanhbac" id="Point10" pan="-217.09" url=""/>
+      <hotspot tilt="-15.22" title="Phòng Máy 2" description="" target="" skinid="ht_url_tulieuanhbac" id="Point11" pan="-216.53" url=""/>
+      <hotspot tilt="2.37" title="Cổng Chính" description="" target="" skinid="Check_Point_robot" id="Point12" pan="-105.26" url="{node1}"/>
+    </hotspots>
+    <media>
+      <sound tilt="-41.630" level="1.000" field="90.000" id="Element01" pan="-306.490" mode="2" pansize="10.000" loop="1" tiltsize="10.000" ambientlevel="0.000" startmutedmobile="0" nodechangekeep="0">
+        <source mono="0" url="media/nen.mp3"/>
+      </sound>
+    </media>
+    <transition zoomoutpause="1" zoomafterinfov="140" zoomout="0" blendcolor="0x000000" zoomfov="40" softedge="0" type="crossdissolve" zoomin="0" delay="none" zoomafteroutfov="40" blendtime="1" enabled="1" zoomspeed="2"/>
+    <autorotate startloaded="0" speed="0.100" nodedelay="0.00" horizonfromdefview="0" nodefilter="" noderandom="1" delay="5.00" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <animation animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedmouse="0" invertcontrol="1" contextfullscreen="1" contextprojections="0" speedwheel="1" lockedwheel="0" sensitivity="8" rubberband="0" zoomcentercursor="1" invertwheel="0" dblclickfullscreen="0" hideabout="0" simulatemass="1" lockedkeyboardzoom="0" contextvr="1" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node7">
+    <input overlap="1" width="1024" levelbiashidpi="1.000" height="1024" levelingroll="0" levelingpitch="0" levelbias="0.400" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510">
+      <level width="1024" preload="0" predecode="0" height="1024"/>
+      <level width="512" preload="0" predecode="0" height="512"/>
+      <level width="256" preload="1" predecode="1" height="256"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start tilt="-63.52" projection="4" fov="138.6" pan="-24.15"/>
+      <flyin tilt="-90" projection="9" fov="170" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" fov="140" scaletofit="1" fovstereographic="330" pan="360" fovfisheye="360"/>
+    </view>
+    <userdata latitude="" source="" copyright="" comment="" title="" description="" tags="image" heading="0" customnodeid="" author="" nodeid="node7" datetime="" info="" longitude=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label border="1" background="1" bordercolor="0x000000" textcolor="0x000000" textalpha="1" width="180" borderalpha="1" wordwrap="1" height="20" backgroundcolor="0xffffff" borderradius="1" enabled="1" backgroundalpha="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot tilt="-30.28" title="Dãy B" description="" target="" skinid="Check_Point_robot" id="Point01" pan="-291.97" url="{node6}"/>
+      <hotspot tilt="-22.36" title="Dãy C" description="" target="" skinid="Check_Point_robot" id="Point02" pan="-222.59" url="{node2}"/>
+      <hotspot tilt="-47.2" title="Phòng Máy" description="" target="" skinid="Check_Point_robot" id="Point03" pan="-104.48" url="{node5}"/>
+      <hotspot tilt="-58.47" title="Cổng Sau" description="" target="" skinid="Check_Point_robot" id="Point04" pan="-40.99" url="{node3}"/>
+      <hotspot tilt="-35.18" title="Thư Viện" description="" target="" skinid="Check_Point_robot" id="Point05" pan="-147.17" url="{node4}"/>
+      <hotspot tilt="-35.66" title="Sân Chính" description="" target="" skinid="Check_Point_robot" id="Point06" pan="-263.7" url="{node8}"/>
+      <hotspot tilt="-24.98" title="Cổng Chính" description="" target="" skinid="Check_Point_robot" id="Point07" pan="-264.97" url="{node1}"/>
+    </hotspots>
+    <media>
+      <sound tilt="-44.570" level="1.000" field="90.000" id="Element01" pan="-298.560" mode="2" pansize="10.000" loop="1" tiltsize="10.000" ambientlevel="0.000" startmutedmobile="0" nodechangekeep="0">
+        <source mono="0" url="media/nen.mp3"/>
+      </sound>
+    </media>
+    <transition zoomoutpause="1" zoomafterinfov="140" zoomout="0" blendcolor="0x000000" zoomfov="40" softedge="0" type="crossdissolve" zoomin="0" delay="none" zoomafteroutfov="40" blendtime="1" enabled="1" zoomspeed="2"/>
+    <autorotate startloaded="0" speed="0.100" nodedelay="0.00" horizonfromdefview="0" nodefilter="" noderandom="1" delay="5.00" useanimation="0" enabled="1" returntohorizon="0.000"/>
+    <animation animsequence="Animation01" clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0"/>
+    <control lockedmouse="0" invertcontrol="1" contextfullscreen="1" contextprojections="0" speedwheel="1" lockedwheel="0" sensitivity="8" rubberband="0" zoomcentercursor="1" invertwheel="0" dblclickfullscreen="0" hideabout="0" simulatemass="1" lockedkeyboardzoom="0" contextvr="1" lockedkeyboard="0"/>
+  </panorama>
+  <masternode>
+    <userdata copyright="" comment="" title="Tham Quan 360vr - CTUT" description="" author="" tags=""/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+  </masternode>
+</tour>
