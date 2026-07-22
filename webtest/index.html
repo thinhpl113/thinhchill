@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="card">
+      <section class="hero">
+        <p class="eyebrow">Hello, toi la</p>
+        <h1 id="name">Dang tai tao...</h1>
+        <p id="tagline" class="tagline"></p>
+
+        <div class="hero-actions">
+          <button id="shuffleBtn" class="primary-btn" type="button">Random lai</button>
+          <a class="ghost-btn" href="#about">Xem them</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="panel intro-panel" id="about">
+          <span class="panel-label">Gioi thieu</span>
+          <p id="bio" class="bio"></p>
+        </article>
+
+        <article class="panel">
+          <span class="panel-label">Vai tro</span>
+          <ul id="roles" class="pill-list"></ul>
+        </article>
+
+        <article class="panel">
+          <span class="panel-label">So thich</span>
+          <ul id="likes" class="detail-list"></ul>
+        </article>
+
+        <article class="panel quote-panel">
+          <span class="panel-label">Tinh cach</span>
+          <p id="quote" class="quote"></p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
